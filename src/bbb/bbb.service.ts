@@ -6,7 +6,7 @@ import { OnEvent } from '@nestjs/event-emitter';
 @Injectable()
 export class BbbService {
 
-  @OnEvent('aaa.find')
+  @OnEvent('aaa.*')
   handleAaaFindEvent(payload: any) {
     console.log('Received aaa.find event with payload:', payload);
   }

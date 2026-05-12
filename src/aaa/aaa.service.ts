@@ -13,7 +13,9 @@ export class AaaService {
   }
 
   findAll() {
-    this.eventEmitter.emit('aaa.find', { data: 'findAll' });
+    this.eventEmitter.emit('aaa.find', { data: 'aaa find' });
+
+    this.eventEmitter.emit('aaa.findAll', { data: 'aaa findAll' });
     return `This action returns all aaa`;
   }
 
