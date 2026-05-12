@@ -6,6 +6,7 @@ import { AaaModule } from './aaa/aaa.module';
 import { BbbModule } from './bbb/bbb.module';
 import { UserModule } from './user/user.module';
 import { NotificationModule } from './notification/notification.module';
+import { EmailModule } from './email/email.module';
 
 @Module({
   imports: [
@@ -18,6 +19,7 @@ import { NotificationModule } from './notification/notification.module';
     BbbModule,
     UserModule,
     NotificationModule,
+    EmailModule,
   ],
   controllers: [AppController],
   providers: [AppService],
