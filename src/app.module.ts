@@ -2,6 +2,8 @@ import { Module } from '@nestjs/common';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { EventEmitterModule } from '@nestjs/event-emitter';
+import { AaaModule } from './aaa/aaa.module';
+import { BbbModule } from './bbb/bbb.module';
 
 @Module({
   imports: [
@@ -10,6 +12,8 @@ import { EventEmitterModule } from '@nestjs/event-emitter';
       delimiter: '.',
       maxListeners: 10,
     }),
+    AaaModule,
+    BbbModule,
   ],
   controllers: [AppController],
   providers: [AppService],
