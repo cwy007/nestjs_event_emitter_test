@@ -4,6 +4,8 @@ import { AppService } from './app.service';
 import { EventEmitterModule } from '@nestjs/event-emitter';
 import { AaaModule } from './aaa/aaa.module';
 import { BbbModule } from './bbb/bbb.module';
+import { UserModule } from './user/user.module';
+import { NotificationModule } from './notification/notification.module';
 
 @Module({
   imports: [
@@ -14,6 +16,8 @@ import { BbbModule } from './bbb/bbb.module';
     }),
     AaaModule,
     BbbModule,
+    UserModule,
+    NotificationModule,
   ],
   controllers: [AppController],
   providers: [AppService],
